@@ -4,7 +4,7 @@ import {
 	useTerminal,
 	type CommandHandler,
 	type TerminalLine,
-} from "react-terminal";
+} from "react-termview";
 
 const WELCOME_LINES: TerminalLine[] = [
 	{
@@ -227,13 +227,13 @@ export function App() {
 				</p>
 				<div className="mt-6 flex gap-4 text-sm">
 					<a
-						href="https://github.com/mulkatz/react-terminal"
+						href="https://github.com/mulkatz/react-termview"
 						className="text-neutral-400 hover:text-neutral-200 transition-colors"
 					>
 						GitHub
 					</a>
 					<a
-						href="https://www.npmjs.com/package/react-terminal"
+						href="https://www.npmjs.com/package/react-termview"
 						className="text-neutral-400 hover:text-neutral-200 transition-colors"
 					>
 						npm

@@ -1,5 +1,5 @@
 {
-	"name": "react-terminal-demo",
+	"name": "react-termview-demo",
 	"private": true,
 	"type": "module",
 	"scripts": {
@@ -10,7 +10,7 @@
 	"dependencies": {
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
-		"react-terminal": "file:.."
+		"react-termview": "file:.."
 	},
 	"devDependencies": {
 		"@tailwindcss/vite": "^4.0.0",

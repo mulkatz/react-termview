@@ -1,5 +1,5 @@
 {
-	"name": "react-terminal",
+	"name": "react-termview",
 	"version": "1.0.0",
 	"description": "Lightweight terminal UI for React with streaming output, ANSI colors, command history, and AI/LLM mode. Headless hook + styled component.",
 	"type": "module",
@@ -71,11 +71,11 @@
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/mulkatz/react-terminal.git"
+		"url": "git+https://github.com/mulkatz/react-termview.git"
 	},
 	"bugs": {
-		"url": "https://github.com/mulkatz/react-terminal/issues"
+		"url": "https://github.com/mulkatz/react-termview/issues"
 	},
 	"author": "Franz Benthin",
-	"homepage": "https://react-terminal.mulkatz.dev"
+	"homepage": "https://react-termview.mulkatz.dev"
 }

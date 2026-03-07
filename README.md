@@ -8,13 +8,13 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/react-terminal"><img src="https://img.shields.io/npm/v/react-terminal" alt="npm version" /></a>
-  <img src="https://img.shields.io/bundlephobia/minzip/react-terminal" alt="bundle size" />
-  <img src="https://img.shields.io/npm/l/react-terminal" alt="license" />
+  <a href="https://www.npmjs.com/package/react-termview"><img src="https://img.shields.io/npm/v/react-termview" alt="npm version" /></a>
+  <img src="https://img.shields.io/bundlephobia/minzip/react-termview" alt="bundle size" />
+  <img src="https://img.shields.io/npm/l/react-termview" alt="license" />
 </p>
 
 <p align="center">
-  <a href="https://react-terminal.mulkatz.dev"><strong>Live Demo</strong></a>
+  <a href="https://react-termview.mulkatz.dev"><strong>Live Demo</strong></a>
 </p>
 
 <p align="center">
@@ -35,14 +35,14 @@
 ## Install
 
 ```bash
-npm install react-terminal
+npm install react-termview
 ```
 
 ## Quick Start
 
 ```tsx
-import { Terminal } from "react-terminal";
-import "react-terminal/styles.css";
+import { Terminal } from "react-termview";
+import "react-termview/styles.css";
 
 function App() {
   return (
@@ -59,8 +59,8 @@ function App() {
 ## Headless Mode
 
 ```tsx
-import { useTerminal, Terminal } from "react-terminal";
-import "react-terminal/styles.css";
+import { useTerminal, Terminal } from "react-termview";
+import "react-termview/styles.css";
 
 function App() {
   const terminal = useTerminal({
@@ -169,7 +169,7 @@ Return a string to output it. Use `terminal.write()` / `terminal.writeln()` for 
 Standalone ANSI parsing utilities:
 
 ```ts
-import { parseAnsi, stripAnsi } from "react-terminal";
+import { parseAnsi, stripAnsi } from "react-termview";
 
 parseAnsi("\x1b[31mred\x1b[0m");
 // => [{ text: "red", style: { color: "#e74c3c" } }]
