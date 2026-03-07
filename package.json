@@ -1,0 +1,81 @@
+{
+	"name": "react-terminal",
+	"version": "1.0.0",
+	"description": "Lightweight terminal UI for React with streaming output, ANSI colors, command history, and AI/LLM mode. Headless hook + styled component.",
+	"type": "module",
+	"main": "./dist/index.cjs",
+	"module": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": {
+				"types": "./dist/index.d.ts",
+				"default": "./dist/index.js"
+			},
+			"require": {
+				"types": "./dist/index.d.cts",
+				"default": "./dist/index.cjs"
+			}
+		},
+		"./styles.css": "./dist/styles.css"
+	},
+	"files": ["dist", "!dist/*.map"],
+	"sideEffects": ["./dist/*.css"],
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"check": "biome check src/",
+		"format": "biome check --write src/",
+		"test": "vitest run",
+		"test:watch": "vitest",
+		"record-demo": "npx tsx scripts/record-demo.ts && ffmpeg -y -i tmp-video/*.webm -ss 1 -vf \"fps=10,scale=800:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=256:stats_mode=full[p];[s1][p]paletteuse=dither=bayer:bayer_scale=5:diff_mode=rectangle\" -loop 0 assets/demo-raw.gif && gifsicle -O3 assets/demo-raw.gif -o assets/demo.gif && rm assets/demo-raw.gif && rm -rf tmp-video",
+		"prepublishOnly": "npm run build"
+	},
+	"peerDependencies": {
+		"react": ">=18.0.0",
+		"react-dom": ">=18.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.0",
+		"@testing-library/react": "^16.0.0",
+		"@types/react": "^19.0.0",
+		"@types/react-dom": "^19.0.0",
+		"jsdom": "^25.0.0",
+		"playwright": "^1.50.0",
+		"react": "^19.0.0",
+		"react-dom": "^19.0.0",
+		"tsup": "^8.0.0",
+		"tsx": "^4.0.0",
+		"typescript": "^5.7.0",
+		"vitest": "^3.0.0"
+	},
+	"keywords": [
+		"react",
+		"terminal",
+		"console",
+		"shell",
+		"cli",
+		"ansi",
+		"streaming",
+		"ai",
+		"llm",
+		"typewriter",
+		"command-line",
+		"headless",
+		"accessible"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mulkatz/react-terminal.git"
+	},
+	"bugs": {
+		"url": "https://github.com/mulkatz/react-terminal/issues"
+	},
+	"author": "Franz Benthin",
+	"homepage": "https://react-terminal.mulkatz.dev"
+}
