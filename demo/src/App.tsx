@@ -9,7 +9,7 @@ import {
 const WELCOME_LINES: TerminalLine[] = [
 	{
 		id: "w1",
-		content: "\x1b[1;36mreact-terminal\x1b[0m v1.0.0",
+		content: "\x1b[1;36mreact-termview\x1b[0m v1.0.0",
 		type: "system",
 		timestamp: Date.now(),
 	},
@@ -63,7 +63,7 @@ function BasicDemo() {
 		<Terminal
 			commands={commands}
 			initialLines={WELCOME_LINES}
-			title="react-terminal"
+			title="react-termview"
 			style={{ height: 380 }}
 		/>
 	);
@@ -218,7 +218,7 @@ export function App() {
 		<div className="min-h-screen bg-neutral-950 text-neutral-100">
 			<header className="max-w-3xl mx-auto px-6 pt-20 pb-12">
 				<h1 className="text-4xl font-bold tracking-tight">
-					react-terminal
+					react-termview
 				</h1>
 				<p className="mt-3 text-lg text-neutral-400 max-w-xl">
 					Lightweight terminal UI for React with streaming output,
@@ -231,12 +231,6 @@ export function App() {
 						className="text-neutral-400 hover:text-neutral-200 transition-colors"
 					>
 						GitHub
-					</a>
-					<a
-						href="https://www.npmjs.com/package/react-termview"
-						className="text-neutral-400 hover:text-neutral-200 transition-colors"
-					>
-						npm
 					</a>
 				</div>
 			</header>

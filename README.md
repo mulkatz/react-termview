@@ -8,17 +8,11 @@
 </p>
 
 <p align="center">
-  <a href="https://www.npmjs.com/package/react-termview"><img src="https://img.shields.io/npm/v/react-termview" alt="npm version" /></a>
-  <img src="https://img.shields.io/bundlephobia/minzip/react-termview" alt="bundle size" />
-  <img src="https://img.shields.io/npm/l/react-termview" alt="license" />
-</p>
-
-<p align="center">
   <a href="https://react-termview.mulkatz.dev"><strong>Live Demo</strong></a>
 </p>
 
 <p align="center">
-  <img src="./assets/demo.gif" alt="react-terminal demo" width="640" />
+  <img src="./assets/demo.gif" alt="react-termview demo" width="640" />
 </p>
 
 ## Why react-termview?
@@ -32,10 +26,17 @@
 - **Tab Completion**: Auto-complete registered command names
 - **Theming**: Dark and light themes, fully customizable via CSS
 
-## Install
+## Use from source
+
+This project is not published on npm. Clone and build it before adding it to an app:
 
 ```bash
-npm install react-termview
+git clone https://github.com/mulkatz/react-termview.git
+cd react-termview
+npm ci
+npm run build
+cd ../your-app
+npm install ../react-termview
 ```
 
 ## Quick Start

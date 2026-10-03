@@ -1,6 +1,12 @@
 {
-	"name": "react-termview-demo",
+	"name": "react-termview",
 	"compatibility_date": "2025-01-01",
+	"routes": [
+		{
+			"pattern": "react-termview.mulkatz.dev",
+			"custom_domain": true
+		}
+	],
 	"assets": {
 		"directory": "demo/dist"
 	}
