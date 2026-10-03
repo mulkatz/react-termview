@@ -20,7 +20,12 @@ function ansiStyleToCSS(style: AnsiStyle): CSSProperties {
 
 function AnsiText({ text }: { text: string }) {
 	const segments = parseAnsi(text);
-	if (segments.length === 1 && Object.keys(segments[0]!.style).length === 0) {
+	const firstSegment = segments[0];
+	if (
+		segments.length === 1 &&
+		firstSegment &&
+		Object.keys(firstSegment.style).length === 0
+	) {
 		return <>{text}</>;
 	}
 	return (
@@ -75,7 +80,7 @@ export function Terminal(props: TerminalProps) {
 	const lineCount = terminal.lines.length;
 	useEffect(() => {
 		const el = scrollRef.current;
-		if (el) {
+		if (el && lineCount > 0) {
 			el.scrollTop = el.scrollHeight;
 		}
 	}, [lineCount]);

@@ -1,6 +1,6 @@
 <p align="center"><img src="./icon.png" width="120" /></p>
 
-<h1 align="center">react-terminal</h1>
+<h1 align="center">react-termview</h1>
 
 <p align="center">
   Lightweight terminal UI for React with streaming output, ANSI colors, command history, and AI/LLM mode.<br/>
@@ -21,7 +21,7 @@
   <img src="./assets/demo.gif" alt="react-terminal demo" width="640" />
 </p>
 
-## Why react-terminal?
+## Why react-termview?
 
 - **Headless + Styled**: Use `useTerminal()` hook for full control, or drop in `<Terminal>` for instant UI
 - **ANSI Colors**: Built-in parser for 16/256/RGB colors, bold, italic, underline, strikethrough

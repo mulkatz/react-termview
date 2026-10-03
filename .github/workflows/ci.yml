@@ -22,3 +22,5 @@ jobs:
       - run: npm run check
       - run: npm run build
       - run: npm test
+      - run: npm ci --prefix demo
+      - run: npm run build --prefix demo
